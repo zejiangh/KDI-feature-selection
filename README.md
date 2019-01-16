@@ -4,7 +4,7 @@ The codes serves as an example to demonstrate the effectiveness of the KDI featu
 
 The method is detailed in paper "A Kernel Discriminant Information Approach to Nonlinear Feature Selection".
 
-# Environments Requirements
+# Environments required
 
 - Numpy
 - Tensorflow
