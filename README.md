@@ -6,5 +6,5 @@ The method is detailed in paper "A Kernel Discriminant Information Approach to N
 
 # Environments Requirements
 
-Numpy
-Tensorflow
+- Numpy
+- Tensorflow
