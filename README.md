@@ -8,3 +8,7 @@ The method is detailed in paper "A Kernel Discriminant Information Approach to N
 
 - Numpy
 - Tensorflow
+
+
+# Running the examples
+
