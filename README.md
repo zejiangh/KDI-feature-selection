@@ -8,5 +8,17 @@ The codes serves as an example to demonstrate the effectiveness of the KDI featu
 - Tensorflow
 
 
-# Running the examples
+# Running the examples on Terminal
 
+We demonstrate the effectiveness of the proposed approach on open-access benchmark feature selection datasets, i,e, SMK_CAN_187 and TOX_171.
+
+```shell
+git clone 
+
+python example.py --option SMK_CAN_187.mat
+
+or
+
+python example.py --option TOX_171.mat
+
+```
