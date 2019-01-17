@@ -17,8 +17,6 @@ git clone https://github.com/zejiangh/KDI-feature-selection
 
 python example.py --option SMK_CAN_187.mat
 
-or
-
 python example.py --option TOX_171.mat
 
 ```
