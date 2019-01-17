@@ -6,6 +6,8 @@ The codes serves as an example to demonstrate the effectiveness of the KDI featu
 
 - Numpy
 - Tensorflow
+- scikit-learn
+- Scipy
 
 
 # Running the examples
