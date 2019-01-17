@@ -8,12 +8,17 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.svm import SVC
 from sklearn.model_selection import GridSearchCV, cross_val_score, KFold
 import matplotlib.pyplot as plt
+import argparse
+
+# Training settings
+parser = argparse.ArgumentParser()
+parser.add_argument('--option', type=str, default='SMK_CAN_187.mat')
+args = parser.parse_args()
     
 svm_tuned_params = [{'kernel': ['rbf'], 'gamma': [1e0,1e-1,1e-2,1e-3,1e-4], 'C': [1, 10, 100]}]
 svc = SVC(kernel='rbf')
     
-data = sio.loadmat('SMK_CAN_187.mat')
-# data = sio.loadmat('TOX_171.mat')
+data = sio.loadmat(args.option)
 x_train = data['X']
 y_train = data['Y']
 print(x_train.shape, y_train.shape)
@@ -43,7 +48,6 @@ for i in range (20):
 plt.plot(num, res, marker='+')
 plt.ylabel('KSVM Accuracy')
 plt.xlabel('# features selected')
-plt.title('KDI feature selection on SMK-CAN-187 data')
 plt.grid(True)
 plt.show()
 
